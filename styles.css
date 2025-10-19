@@ -173,36 +173,36 @@ body {
     --animation-duration: 20s;
 }
 
-.job-section[data-salary="41667"] .dollar-bills {
-    --animation-duration: 1.5s;
+.job-section[data-salary="2080"] .dollar-bills {
+    --animation-duration: 15s; /* Lent - bon salaire */
 }
 
-.job-section[data-salary="2080"] .dollar-bills {
-    --animation-duration: 3s;
+.job-section[data-salary="41667"] .dollar-bills {
+    --animation-duration: 8s; /* Plus lent - très bon salaire */
 }
 
 .job-section[data-salary="9088"] .dollar-bills {
-    --animation-duration: 10s; /* Beaucoup plus lent */
+    --animation-duration: 12s; /* Lent - CEO */
 }
 
 .job-section[data-salary="25"] .dollar-bills {
     --animation-duration: 25s; /* Valeur par défaut pour le slider */
 }
 
-.job-section[data-salary="331055"] .dollar-bills {
-    --animation-duration: 0.6s;
+.job-section[data-salary="91324"] .dollar-bills {
+    --animation-duration: 6s; /* Plus lent que CEO - gros revenus */
 }
 
-.job-section[data-salary="91324"] .dollar-bills {
-    --animation-duration: 1.2s;
+.job-section[data-salary="331055"] .dollar-bills {
+    --animation-duration: 4s; /* Ultra lent - énormes revenus */
 }
 
 .job-section[data-salary="408653"] .dollar-bills {
-    --animation-duration: 5s;
+    --animation-duration: 3s; /* Maximum lent - dépenses gouvernementales */
 }
 
 .job-section[data-salary="865385"] .dollar-bills {
-    --animation-duration: 4s; /* Le plus rapide mais encore très lent */
+    --animation-duration: 2s; /* Ultra maximum lent - déficit national */
 }
 
 /* Responsive */
