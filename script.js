@@ -14,6 +14,29 @@ const jobData = {
     '865385': { name: 'U.S. Deficit Increase', salary: 865385 }
 };
 
+// Fonction pour copier l'adresse Solana
+function copyAddress() {
+    const addressInput = document.getElementById('solana-address');
+    addressInput.select();
+    addressInput.setSelectionRange(0, 99999); // Pour mobile
+    
+    try {
+        document.execCommand('copy');
+        // Feedback visuel
+        const copyBtn = document.querySelector('.copy-btn');
+        const originalText = copyBtn.textContent;
+        copyBtn.textContent = '✅ Copied!';
+        copyBtn.style.background = '#28a745';
+        
+        setTimeout(() => {
+            copyBtn.textContent = originalText;
+            copyBtn.style.background = '#007bff';
+        }, 2000);
+    } catch (err) {
+        console.error('Erreur lors de la copie:', err);
+    }
+}
+
 // Initialisation
 document.addEventListener('DOMContentLoaded', function() {
     initializeMoneyStreams();
