@@ -1,0 +1,255 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bordure en haut - Style original de Neal.fun */
+.border-top {
+    background: url('https://neal.fun/printing-money/border.png') repeat-x;
+    background-size: auto 50px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px; /* Espace pour la bordure fixe */
+}
+
+/* Sections de métiers */
+.job-section {
+    padding: 30px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.job-section:last-child {
+    border-bottom: none;
+}
+
+.job-section h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.source-info {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* Slider personnalisé */
+.custom-salary {
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.slider-container {
+    margin: 15px 0;
+}
+
+#salary-slider {
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: #e2e8f0;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#salary-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #667eea;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#salary-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #667eea;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Animation inverse pour les pertes */
+.dollar-bills.reverse {
+    animation-direction: reverse;
+}
+
+/* Stream d'argent */
+.money-stream {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.dollar-bills {
+    display: flex;
+    height: 100%;
+    animation: scrollMoney linear infinite;
+    animation-duration: var(--animation-duration, 10s);
+}
+
+/* Billets d'un dollar authentiques avec vraies images */
+.dollar-bill {
+    width: 155px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    margin-right: 3px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+
+/* Animation de défilement vraiment infinie */
+@keyframes scrollMoney {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Vitesses ULTRA RALENTIES et TRÈS VISIBLES selon le salaire */
+.job-section[data-salary="-0.36"] .dollar-bills {
+    --animation-duration: 60s; /* Ultra lent pour les pertes */
+}
+
+.job-section[data-salary="7.25"] .dollar-bills {
+    --animation-duration: 50s;
+}
+
+.job-section[data-salary="13.27"] .dollar-bills {
+    --animation-duration: 40s;
+}
+
+.job-section[data-salary="28.16"] .dollar-bills {
+    --animation-duration: 30s;
+}
+
+.job-section[data-salary="67.63"] .dollar-bills {
+    --animation-duration: 20s;
+}
+
+.job-section[data-salary="241.60"] .dollar-bills {
+    --animation-duration: 15s;
+}
+
+.job-section[data-salary="9088"] .dollar-bills {
+    --animation-duration: 10s; /* Beaucoup plus lent */
+}
+
+.job-section[data-salary="226923077"] .dollar-bills {
+    --animation-duration: 8s; /* Encore plus lent */
+}
+
+.job-section[data-salary="25"] .dollar-bills {
+    --animation-duration: 25s; /* Valeur par défaut pour le slider */
+}
+
+.job-section[data-salary="1202"] .dollar-bills {
+    --animation-duration: 12s;
+}
+
+.job-section[data-salary="12212"] .dollar-bills {
+    --animation-duration: 10s;
+}
+
+.job-section[data-salary="241"] .dollar-bills {
+    --animation-duration: 15s;
+}
+
+.job-section[data-salary="85961"] .dollar-bills {
+    --animation-duration: 8s;
+}
+
+.job-section[data-salary="322332"] .dollar-bills {
+    --animation-duration: 6s;
+}
+
+.job-section[data-salary="408653"] .dollar-bills {
+    --animation-duration: 5s;
+}
+
+.job-section[data-salary="865385"] .dollar-bills {
+    --animation-duration: 4s; /* Le plus rapide mais encore très lent */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .job-section {
+        padding: 20px 15px;
+    }
+    
+    .job-section h2 {
+        font-size: 1.2rem;
+    }
+    
+    .money-stream {
+        height: 60px;
+    }
+    
+    .dollar-bill {
+        width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .job-section {
+        padding: 15px 10px;
+    }
+    
+    .job-section h2 {
+        font-size: 1rem;
+    }
+    
+    .money-stream {
+        height: 50px;
+    }
+    
+    .dollar-bill {
+        width: 100px;
+    }
+}

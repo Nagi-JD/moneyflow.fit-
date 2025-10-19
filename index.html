@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevenueFun</title>
+    <link rel="icon" type="image/png" href="printing-money.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="border-top"></div>
+    <div class="container">
+        <!-- Average Trencher -->
+        <div class="job-section" data-salary="-0.36" data-type="loss">
+            <h2>Average Trencher ($-0.36/hr)</h2>
+            <div class="source-info">Dalbar/BIS studies: 70-80% lose ~$750/yr</div>
+            <div class="money-stream">
+                <div class="dollar-bills reverse"></div>
+            </div>
+        </div>
+
+        <!-- Minimum Wage -->
+        <div class="job-section" data-salary="7.25">
+            <h2>Minimum Wage ($7.25/hr)</h2>
+            <div class="source-info">BLS/FLSA: Unchanged federal min</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- McDonald's Employee -->
+        <div class="job-section" data-salary="13.27">
+            <h2>MCDO Employee ($13.27/hr)</h2>
+            <div class="source-info">ZipRecruiter/Payscale: $13.27 nat'l avg</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Average Salary US -->
+        <div class="job-section" data-salary="28.16">
+            <h2>Average salary US ($28.16/hr)</h2>
+            <div class="source-info">BLS/ZipRecruiter: $58,570/yr median</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Software Engineer -->
+        <div class="job-section" data-salary="67.63">
+            <h2>Software Engineer ($67.63/hr)</h2>
+            <div class="source-info">Levels.fyi/Glassdoor: $133k-$147k/yr median</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Pumpfun Owner -->
+        <div class="job-section" data-salary="241.60">
+            <h2>PUMPFUN OWNER (Alon Cohen et al.) <span class="salary-amount">~$241.60</span></h2>
+            <div class="source-info">Forbes/Crunchbase: $500M+ rev est.</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Fortune 500 CEO -->
+        <div class="job-section" data-salary="9088">
+            <h2>Fortune 500 CEO <span class="salary-amount">~$9,088</span></h2>
+            <div class="source-info">AFL-CIO/AP: $18.9M median comp</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Elon Musk -->
+        <div class="job-section" data-salary="226923077">
+            <h2>Elon <span class="salary-amount">~$226,923,077</span></h2>
+            <div class="source-info">Forbes/Bloomberg: $500B net worth</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Your Hourly Pay Slider -->
+        <div class="job-section custom-salary" data-salary="25">
+            <h2>Your Hourly Pay <span class="salary-amount" id="custom-salary-display">$25.00</span></h2>
+            <div class="slider-container">
+                <input type="range" id="salary-slider" min="0" max="1000" value="25" step="0.01">
+                <div class="slider-labels">
+                    <span>$0</span>
+                    <span>$500</span>
+                    <span>$1000</span>
+                </div>
+            </div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Twitter Revenue -->
+        <div class="job-section" data-salary="1202">
+            <h2>Twitter Revenue <span class="salary-amount">~$1,202</span></h2>
+            <div class="source-info">Business of Apps/BPC: $2.5B 2024</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- NASA Spending -->
+        <div class="job-section" data-salary="12212">
+            <h2>NASA Spending <span class="salary-amount">~$12,212</span></h2>
+            <div class="source-info">NASA/BPC: $25.4B FY25</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Pumpfun Revenue -->
+        <div class="job-section" data-salary="241">
+            <h2>Pumpfun revenue <span class="salary-amount">~$241 (daily equiv)</span></h2>
+            <div class="source-info">Bitget/Forbes: $500M+ est.</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Facebook Revenue -->
+        <div class="job-section" data-salary="85961">
+            <h2>Facebook Revenue <span class="salary-amount">~$85,961</span></h2>
+            <div class="source-info">MacroTrends/Statista: $178.8B TTM</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- Amazon Revenue -->
+        <div class="job-section" data-salary="322332">
+            <h2>Amazon Revenue <span class="salary-amount">~$322,332</span></h2>
+            <div class="source-info">MacroTrends/Statista: $670B TTM</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- U.S. Military Spending -->
+        <div class="job-section" data-salary="408653">
+            <h2>U.S. Military Spending <span class="salary-amount">~$408,653</span></h2>
+            <div class="source-info">Wikipedia/DoD: $849.8B FY25</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+
+        <!-- U.S. Deficit Increase -->
+        <div class="job-section" data-salary="865385">
+            <h2>U.S. Deficit Increase <span class="salary-amount">~$865,385</span></h2>
+            <div class="source-info">CBO/BPC: $1.8T FY25</div>
+            <div class="money-stream">
+                <div class="dollar-bills"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
