@@ -181,8 +181,12 @@ body {
     --animation-duration: 10s; /* Beaucoup plus lent */
 }
 
-.job-section[data-salary="226923077"] .dollar-bills {
-    --animation-duration: 8s; /* Encore plus lent */
+.job-section[data-salary="41667"] .dollar-bills {
+    --animation-duration: 1.5s;
+}
+
+.job-section[data-salary="2080"] .dollar-bills {
+    --animation-duration: 3s;
 }
 
 .job-section[data-salary="25"] .dollar-bills {
