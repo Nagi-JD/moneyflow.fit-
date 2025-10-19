@@ -173,8 +173,8 @@ body {
     --animation-duration: 20s;
 }
 
-.job-section[data-salary="208000"] .dollar-bills {
-    --animation-duration: 0.8s;
+.job-section[data-salary="41667"] .dollar-bills {
+    --animation-duration: 1.5s;
 }
 
 .job-section[data-salary="2080"] .dollar-bills {

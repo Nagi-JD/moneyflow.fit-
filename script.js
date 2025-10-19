@@ -5,7 +5,7 @@ const jobData = {
     '13.27': { name: 'MCDO Employee', salary: 13.27 },
     '28.16': { name: 'Average salary US', salary: 28.16 },
     '67.63': { name: 'Software Engineer', salary: 67.63 },
-    '241.60': { name: 'PUMPFUN OWNER', salary: 208000 },
+    '241.60': { name: 'PUMPFUN OWNER', salary: 41667 },
     '2080': { name: 'Cupsey', salary: 2080 },
     '9088': { name: 'Fortune 500 CEO', salary: 9088 },
     '331055': { name: 'Twitter Revenue', salary: 331055 },
