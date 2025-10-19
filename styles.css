@@ -193,20 +193,8 @@ body {
     --animation-duration: 0.6s;
 }
 
-.job-section[data-salary="12212"] .dollar-bills {
-    --animation-duration: 10s;
-}
-
 .job-section[data-salary="91324"] .dollar-bills {
     --animation-duration: 1.2s;
-}
-
-.job-section[data-salary="85961"] .dollar-bills {
-    --animation-duration: 8s;
-}
-
-.job-section[data-salary="322332"] .dollar-bills {
-    --animation-duration: 6s;
 }
 
 .job-section[data-salary="408653"] .dollar-bills {

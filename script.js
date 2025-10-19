@@ -9,10 +9,7 @@ const jobData = {
     '9088': { name: 'Fortune 500 CEO', salary: 9088 },
     '226923077': { name: 'Elon', salary: 226923077 },
     '331055': { name: 'Twitter Revenue', salary: 331055 },
-    '12212': { name: 'NASA Spending', salary: 12212 },
     '91324': { name: 'Pumpfun revenue', salary: 91324 },
-    '85961': { name: 'Facebook Revenue', salary: 85961 },
-    '322332': { name: 'Amazon Revenue', salary: 322332 },
     '408653': { name: 'U.S. Military Spending', salary: 408653 },
     '865385': { name: 'U.S. Deficit Increase', salary: 865385 }
 };
