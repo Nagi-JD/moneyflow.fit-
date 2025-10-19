@@ -217,9 +217,10 @@ body {
 .logo-section h1 {
     font-size: 2.5rem;
     color: #333;
-    margin: 0 0 30px 0;
+    margin: 0 0 40px 0;
     font-family: 'PT Serif', serif;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 /* Contact Info Top */
