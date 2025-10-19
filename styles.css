@@ -213,13 +213,6 @@ body {
     border-bottom: 1px solid #e9ecef;
 }
 
-.main-logo {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 15px;
-    object-fit: contain;
-}
-
 .logo-section h1 {
     font-size: 2.5rem;
     color: #333;
@@ -279,6 +272,9 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     transition: background 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .contact-info-top .copy-btn:hover {
@@ -286,7 +282,9 @@ body {
 }
 
 .contact-info-top .twitter-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     padding: 10px 16px;
     background: #1da1f2;
     color: white;
@@ -301,6 +299,12 @@ body {
     background: #0d8bd9;
 }
 
+.btn-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -308,9 +312,9 @@ body {
         font-size: 2rem;
     }
     
-    .main-logo {
-        width: 60px;
-        height: 60px;
+    .btn-logo {
+        width: 18px;
+        height: 18px;
     }
     
     .contact-info-top {
